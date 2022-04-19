@@ -222,7 +222,7 @@ export default {
          this.toast.error("Please put in a valid number");
       }else{
         this.isLoading = true
-         fetch(`http://www.floatrates.com/daily/${this.currencyOne}.json`)
+         fetch(`https://www.floatrates.com/daily/${this.currencyOne}.json`)
         .then((response) => response.json())
         .then((data) => {
           for(let [key, value] of Object.entries(data)){
